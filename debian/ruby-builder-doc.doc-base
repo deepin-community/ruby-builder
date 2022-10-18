@@ -1,0 +1,10 @@
+Document: ruby-builder
+Title: Builder Documentation
+Author: Jim Weirich
+Abstract: Rdoc-generated API documentation.
+Section: Programming/Ruby
+
+Format: HTML
+Index: /usr/share/doc/ruby-builder/rdoc/index.html
+Files: /usr/share/doc/ruby-builder/rdoc/*
+

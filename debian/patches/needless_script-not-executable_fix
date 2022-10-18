@@ -1,0 +1,72 @@
+Index: ruby-builder/lib/blankslate.rb
+===================================================================
+--- ruby-builder.orig/lib/blankslate.rb
++++ ruby-builder/lib/blankslate.rb
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ # frozen_string_literal: true
+ #--
+ # Copyright 2004, 2006 by Jim Weirich (jim@weirichhouse.org).
+Index: ruby-builder/lib/builder/blankslate.rb
+===================================================================
+--- ruby-builder.orig/lib/builder/blankslate.rb
++++ ruby-builder/lib/builder/blankslate.rb
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ # frozen_string_literal: true
+ #--
+ # Copyright 2004, 2006 by Jim Weirich (jim@weirichhouse.org).
+Index: ruby-builder/lib/builder.rb
+===================================================================
+--- ruby-builder.orig/lib/builder.rb
++++ ruby-builder/lib/builder.rb
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ # frozen_string_literal: true
+ 
+ #--
+Index: ruby-builder/lib/builder/xchar.rb
+===================================================================
+--- ruby-builder.orig/lib/builder/xchar.rb
++++ ruby-builder/lib/builder/xchar.rb
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ # frozen_string_literal: true
+ 
+ # The XChar library is provided courtesy of Sam Ruby (See
+Index: ruby-builder/lib/builder/xmlbase.rb
+===================================================================
+--- ruby-builder.orig/lib/builder/xmlbase.rb
++++ ruby-builder/lib/builder/xmlbase.rb
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ # frozen_string_literal: true
+ 
+ require 'builder/blankslate'
+Index: ruby-builder/lib/builder/xmlevents.rb
+===================================================================
+--- ruby-builder.orig/lib/builder/xmlevents.rb
++++ ruby-builder/lib/builder/xmlevents.rb
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ # frozen_string_literal: true
+ 
+ #--
+Index: ruby-builder/lib/builder/xmlmarkup.rb
+===================================================================
+--- ruby-builder.orig/lib/builder/xmlmarkup.rb
++++ ruby-builder/lib/builder/xmlmarkup.rb
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ # frozen_string_literal: true
+ #--
+ # Copyright 2004, 2005 by Jim Weirich (jim@weirichhouse.org).
+Index: ruby-builder/rakelib/tags.rake
+===================================================================
+--- ruby-builder.orig/rakelib/tags.rake
++++ ruby-builder/rakelib/tags.rake
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ # frozen_string_literal: true
+ 
+ module Tags

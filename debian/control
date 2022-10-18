@@ -1,0 +1,29 @@
+Source: ruby-builder
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Marc Dequènes (Duck) <Duck@DuckCorp.org>,Paul van Tilburg <paulvt@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               gem2deb (>= 1),
+               rake,
+               ruby-blankslate
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-builder.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-builder
+Homepage: https://github.com/tenderlove/builder
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-builder
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Description: Builders for XML MarkUps
+ Builder provides a number of builder objects that make creating structured data
+ simple to do.  Currently the following builder objects are supported:
+ .
+ * XML Markup
+ * XML Events

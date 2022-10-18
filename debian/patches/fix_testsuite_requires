@@ -1,0 +1,71 @@
+Index: ruby-builder/test/test_blankslate.rb
+===================================================================
+--- ruby-builder.orig/test/test_blankslate.rb
++++ ruby-builder/test/test_blankslate.rb
+@@ -11,8 +11,8 @@
+ # above copyright notice is included.
+ #++
+ 
+-require 'helper'
+-require 'preload'
++require_relative 'helper'
++require_relative 'preload'
+ require 'blankslate'
+ require 'stringio'
+ 
+Index: ruby-builder/test/test_eventbuilder.rb
+===================================================================
+--- ruby-builder.orig/test/test_eventbuilder.rb
++++ ruby-builder/test/test_eventbuilder.rb
+@@ -11,8 +11,8 @@
+ # above copyright notice is included.
+ #++
+ 
+-require 'helper'
+-require 'preload'
++require_relative 'helper'
++require_relative 'preload'
+ require 'builder'
+ require 'builder/xmlevents'
+ 
+Index: ruby-builder/test/test_namecollision.rb
+===================================================================
+--- ruby-builder.orig/test/test_namecollision.rb
++++ ruby-builder/test/test_namecollision.rb
+@@ -11,7 +11,7 @@
+ # above copyright notice is included.
+ #++
+ 
+-require 'helper'
++require_relative 'helper'
+ require 'builder/xchar'
+ 
+ class TestNameCollisions < Builder::Test
+Index: ruby-builder/test/test_xchar.rb
+===================================================================
+--- ruby-builder.orig/test/test_xchar.rb
++++ ruby-builder/test/test_xchar.rb
+@@ -14,7 +14,7 @@
+ 
+ #!/usr/bin/env ruby
+ 
+-require 'helper'
++require_relative 'helper'
+ require 'builder/xchar'
+ 
+ if String.method_defined?(:encode)
+Index: ruby-builder/test/test_markupbuilder.rb
+===================================================================
+--- ruby-builder.orig/test/test_markupbuilder.rb
++++ ruby-builder/test/test_markupbuilder.rb
+@@ -11,8 +11,8 @@
+ # above copyright notice is included.
+ #++
+ 
+-require 'helper'
+-require 'preload'
++require_relative 'helper'
++require_relative 'preload'
+ require 'builder'
+ require 'builder/xmlmarkup'
+ 

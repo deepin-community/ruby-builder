@@ -1,0 +1,6 @@
+--- 
+- test/test_blankslate.rb
+- test/test_eventbuilder.rb
+- test/test_markupbuilder.rb
+- test/test_namecollision.rb
+- test/test_xchar.rb

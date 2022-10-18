@@ -1,0 +1,24 @@
+# Author: Diego Elio Pettenò <flameeyes@gmail.com>
+# Last-Update: Wed Feb 2 14:20:00 2011 +0100
+# Description:
+#  Skip blankslate tests even when using minitest.
+#  .
+#  At least with Ruby 1.9.2's minitest, simply defining the suite method is
+#  not going to be enough to skip over these tests; instead use the skip
+#  method if it's available.
+#
+Index: ruby-builder/test/test_blankslate.rb
+===================================================================
+--- ruby-builder.orig/test/test_blankslate.rb
++++ ruby-builder/test/test_blankslate.rb
+@@ -79,6 +79,10 @@ end
+ #
+ class TestBlankSlate < Builder::Test
+   def setup
++    if Object::const_defined?(:BasicObject) and respond_to?(:skip)
++      skip "BlankSlate is not used in this environment"
++    end
++
+     @bs = BlankSlate.new
+   end
+ 

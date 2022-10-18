@@ -1,0 +1,13 @@
+
+For general purpose Team Packaging guidelines, see:
+  https://wiki.debian.org/Teams/Ruby/Packaging
+
+The following is the maintainer's local policy.
+
+Patches to the upstream code are managed in debian/patches/. It is
+easier to manage everything in git and use a single debian patch file,
+but it does not allow easy retrieval of a proper rebased patch and
+the patch's history cannot be sorted out quickly. Methods like gbp-pq
+are interesting but also have drawbacks, so it's how it gonna be
+handled in the package for now.
+

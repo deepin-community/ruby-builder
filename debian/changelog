@@ -1,0 +1,154 @@
+ruby-builder (3.2.4-1) unstable; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Marc Dequènes (Duck) ]
+  * New upstream version 3.2.4:
+    + refreshed patches.
+  * Drop generated API doc package and add missing doc files.
+  * Bumped Standards-Version to 4.5.0 (no changes needed).
+  * Switch Maintainer/Uploaders to team defaults.
+  * Add upstream metadata.
+  * Fix rdoc file permission.
+  * Fix script-not-executable lintian warning with a patch.
+
+ -- Marc Dequènes (Duck) <Duck@DuckCorp.org>  Wed, 12 Feb 2020 22:52:06 +0900
+
+ruby-builder (3.2.3-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #894247).
+  * Refreshed patch.
+  * Update homepage to reflect change of upstream maintainer.
+  * Use new gemwatch service.
+  * Updated VCS URLs (Alioth->Salsa).
+  * Switch to compat level 11.
+  * Use HTTPS URLs in Debian metadata.
+  * Bump Standards-Version to 4.1.4.
+  * Add multiarch information.
+  * Added patch to fix requires in test suite.
+  * Adapt doc reference since it is now in the main package.
+  * Fix typo in package description.
+
+ -- Marc Dequènes (Duck) <Duck@DuckCorp.org>  Mon, 16 Apr 2018 04:31:37 +0900
+
+ruby-builder (3.2.2-4) unstable; urgency=medium
+
+  * Build-Depends on libjs-jquery which is needed for rdoc generation
+    (see #760952) (Closes: #760909, #761563).
+
+ -- Marc Dequènes (Duck) <Duck@DuckCorp.org>  Tue, 16 Sep 2014 14:07:28 +0200
+
+ruby-builder (3.2.2-3) unstable; urgency=medium
+
+  * Drop Build-Dependency on ruby2.0
+
+ -- Antonio Terceiro <terceiro@debian.org>  Mon, 19 May 2014 20:05:54 -0300
+
+ruby-builder (3.2.2-2) unstable; urgency=medium
+
+  * Rebuild against newer gem2deb (adds gempecs for all interpreters, current
+    and future)
+
+ -- Antonio Terceiro <terceiro@debian.org>  Mon, 19 May 2014 12:18:21 -0300
+
+ruby-builder (3.2.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bumped Standards-Version to 3.9.5 (no changes).
+  * Added documentation package.
+
+ -- Marc Dequènes (Duck) <Duck@DuckCorp.org>  Sat, 04 Jan 2014 03:02:49 +0100
+
+ruby-builder (3.2.0-1) unstable; urgency=low
+
+  [ Cédric Boutillier ]
+  * debian/control: remove obsolete DM-Upload-Allowed flag
+  * use canonical URI in Vcs-* fields
+  * debian/copyright: use DEP5 copyright-format/1.0 official URL for Format
+    field
+
+  [ Antonio Terceiro ]
+  * New upstream release
+  * Patches dropped because they were already applied upstream:
+    - ruby-builder_dummy_encodings_973b558
+    - ruby-builder_fast_xs_rails_workaround_a24436e
+  * debian/patches/test_blankslate_fix_ruby_1.9: refreshed
+  * README.rdoc is not distributed anymore
+  * Drop transitional packages libbuilder-ruby, libbuilder-ruby1.8,
+    libbuilder-ruby1.9.1, as well as Replaces/Breaks/Provides declarations
+    mentioning them.
+  * Bump standards version to 3.9.4; no changes needed
+
+ -- Antonio Terceiro <terceiro@debian.org>  Fri, 17 May 2013 21:34:43 -0300
+
+ruby-builder (3.0.0-3) unstable; urgency=low
+
+  * Bump build dependency on gem2deb to >= 0.3.0~
+
+ -- Antonio Terceiro <terceiro@debian.org>  Mon, 25 Jun 2012 15:36:54 -0300
+
+ruby-builder (3.0.0-2) unstable; urgency=low
+
+  [ Cédric Boutillier ]
+  * Build-depends and depends on ruby-blankslate (and removed embedded
+    copy).
+
+  [ Marc Dequènes (Duck) ]
+  * Added patches from Diego Elio Pettenò <flameeyes@flameeyes.eu>:
+    - ruby-builder_dummy_encodings_973b558: fix problems with dummy encoding
+        (Closes: #646657)
+    - ruby-builder_fast_xs_rails_workaround_a24436e: workaround fast_xs
+      limitations (no encoding parameter for to_xs method)
+  * Fixed transitional-package-should-be-oldlibs-extra.
+
+ -- Marc Dequènes (Duck) <Duck@DuckCorp.org>  Wed, 25 Jan 2012 20:07:01 +0100
+
+ruby-builder (3.0.0-1) unstable; urgency=low
+
+  [ Marc Dequènes (Duck) ]
+  * New maintainer.
+  * New upstream release.
+  * Switched to gem2deb packaging style.
+  * Switched to the new git repository.
+  * Converted copyright file to DEP5 and updated content.
+
+  [ Antonio Terceiro ]
+  * Disable test that was not supposed to be distributed
+  * Cherry-picked patch by Diego Elio Pettenò from to disable Blankslate tests
+    under Ruby 1.9 (c6ab2a7c here):
+    https://github.com/Flameeyes/builder/commit/770b5acf1736297669d000d1f673ba287ef1d95e
+
+ -- Antonio Terceiro <terceiro@debian.org>  Fri, 12 Aug 2011 00:22:58 -0700
+
+libbuilder-ruby (2.1.2-2) unstable; urgency=low
+
+  [ Gunnar Wolf ]
+  * Changed section to Ruby as per ftp-masters' request
+
+  [ Lucas Nussbaum ]
+  * Added Vcs-* fields.
+
+  [ Marc Dequènes (Duck) ]
+  * Added patches:
+    + pre-2.2.0: various fixes from git
+    + tolsen: fixes from the Tim Olsen's fork
+  * Switched to dpkg-source 3.0 (quilt) format.
+  * Switched to compat level 7.
+  * Increased Standards-Version to 3.8.4 (no changes).
+  * Added support for Ruby 1.9.1 (with a patch from Sam Ruby, included
+    in the tolsen patch).
+
+ -- Marc Dequènes (Duck) <Duck@DuckCorp.org>  Sun, 21 Mar 2010 16:41:45 +0100
+
+libbuilder-ruby (2.1.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Paul van Tilburg <paulvt@debian.org>  Tue, 08 May 2007 21:32:12 +0200
+
+libbuilder-ruby (2.1.1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #397059)
+
+ -- Paul van Tilburg <paulvt@debian.org>  Sun, 06 May 2007 22:41:06 +0200
