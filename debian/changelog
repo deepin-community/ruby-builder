@@ -1,3 +1,16 @@
+ruby-builder (3.2.4-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Apply multi-arch hints.
+    + ruby-builder: Add Multi-Arch: foreign.
+
+  [ Marc Dequènes (Duck) ]
+  * Remove last bits of generated doc; gem2deb does not install them
+    anymore and this package FTBFS.
+
+ -- Marc Dequènes (Duck) <Duck@DuckCorp.org>  Wed, 21 Sep 2022 10:42:06 +0900
+
 ruby-builder (3.2.4-1) unstable; urgency=medium
 
   [ Utkarsh Gupta ]

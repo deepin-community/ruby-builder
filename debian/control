@@ -1,7 +1,7 @@
 Source: ruby-builder
 Section: ruby
 Priority: optional
-Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Marc Dequènes (Duck) <Duck@DuckCorp.org>,Paul van Tilburg <paulvt@debian.org>
 Build-Depends: debhelper-compat (= 12),
                gem2deb (>= 1),
@@ -21,6 +21,7 @@ XB-Ruby-Versions: ${ruby:Versions}
 Depends: ${misc:Depends},
          ${ruby:Depends},
          ${shlibs:Depends}
+Multi-Arch: foreign
 Description: Builders for XML MarkUps
  Builder provides a number of builder objects that make creating structured data
  simple to do.  Currently the following builder objects are supported:
